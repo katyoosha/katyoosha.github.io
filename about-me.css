@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Montserrat;
+}
+
+body .container {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    background-image: url(img/BG.jpg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: center;
+    background-position-y: 80vh;
+}
+
+.container {
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.container h1 {
+    margin-top: 14vh;
+    font-size: 7em;
+    border-bottom: 3px solid #FFFFFF;
+    border-radius: 40px;
+    padding-bottom: 64px;
+    transition: font-size 0.2s ease-in-out 100ms;
+    cursor: default;
+}
+
+.container h1:hover {
+    font-size: 7.1em;
+}
+
+.container .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8vh;
+    font-size: 1.1em;
+}
+
+.container .info #about-me-container{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 16px;
+}
+
+.container .info div{
+    display: flex;
+    width: 90%;
+}
+
+.container .info div a{
+    font-weight: bold;
+    margin-top: 16px;
+    border-bottom: 3px solid #FFF;
+    padding-bottom: 6px;
+    width: fit-content;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.2s ease-in-out 100ms;
+}
+
+.container .info div a:visited{
+    color: #FFFFFF;
+}
+
+.container .info div a:hover{
+    color: #FFFFFF;
+    border-bottom: 3px solid #111;
+}
+
+.container .info p{
+    width: 90%;
+    line-height: 1.5em;
+    word-spacing: 10px;
+    text-align: start;
+}
+
+header {
+    position: fixed;
+    top: 25px;    
+    width: 100%;
+    z-index: 9998;
+}
+
+header .navbar {
+    display: flex;
+    width: 85%;
+    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+}
+
+header .navbar .navbar-left-items {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 24px;
+    align-items: center;
+}
+
+header .navbar .navbar-left-items p{
+    font-size: 1.2em;
+    margin-right: 24px;
+}
+
+header .navbar .navbar-left-items p b{
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+header .navbar .navbar-right-items {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    padding-right: 24px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .navbar .navbar-right-items a {
+    color: #CCCCCC;
+    transition: 0.2s ease-in-out 100ms;
+}
+
+header .navbar .navbar-right-items a:hover {
+    color: #FFFFFF;
+}
+
+.container a {
+    font-weight: normal;
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: 2px solid #111;
+    transition: 0.2s ease-in-out 100ms;
+    padding-bottom: 4px;
+}
+
+.container a:hover {
+    font-weight: bold;
+    border-bottom: 2px solid #FFF;
+}
+
+.container a:visited {
+    color: #FFF;
+}
+
+.container .content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    line-height: 1.5em;
+    word-spacing: 10px;
+    margin-top: 24vh;
+}
+
+.container .content ul {
+    margin-top: 36px;
+}
+
+.container .content ul li{
+    margin-top: 8px;
+    margin-left: 24px;
+}
+
+footer {
+    display: flex;
+    margin-top:auto;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #111111;
+    text-align: center;
+}
